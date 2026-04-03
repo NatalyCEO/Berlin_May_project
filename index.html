@@ -106,7 +106,10 @@
           Путь раненого года был не хаотичным, а строго выстроенным: от поля боя к этапам помощи, где каждая минута меняла исход.
           Ключевым узлом оставалась <strong>медицинская сортировка</strong> — именно она определяла приоритет, объём помощи и дальнейший маршрут эвакуации.
         </p>
-        <div class="evac-chain">
+        <p class="evac-chain-hint" id="evacChainHint" role="note">
+          Нажмите на карточку этапа, чтобы открыть пояснение.
+        </p>
+        <div class="evac-chain" role="group" aria-describedby="evacChainHint">
           <button type="button" class="evac-step" data-modal="evac-0"><div class="evac-step__icon">◎</div><div class="evac-step__name">Поле боя</div></button>
           <button type="button" class="evac-step" data-modal="evac-sort"><div class="evac-step__icon">✦</div><div class="evac-step__name">Сортировка</div></button>
           <button type="button" class="evac-step" data-modal="evac-1"><div class="evac-step__icon">✚</div><div class="evac-step__name">ПМП</div></button>

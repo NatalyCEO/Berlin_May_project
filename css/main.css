@@ -457,6 +457,15 @@ main {
 }
 
 /* Evacuation chain */
+.evac-chain-hint {
+  margin: 0 0 1rem;
+  max-width: 42rem;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: var(--text-dim);
+}
+
 .evac-chain {
   display: flex;
   flex-wrap: wrap;
