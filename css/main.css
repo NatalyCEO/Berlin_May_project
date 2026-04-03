@@ -492,6 +492,11 @@ main {
 }
 
 @media (max-width: 700px) {
+  .evac-step {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
   .evac-step::after {
     content: "↓";
     right: 50%;
@@ -531,6 +536,20 @@ main {
   padding: 0;
   position: relative;
   overflow: hidden;
+}
+
+.pmp-scheme-hint {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--text-dim);
+  border-bottom: 1px solid #2a2a2a;
+  background: rgba(227, 43, 43, 0.05);
+}
+
+.evac-scheme--empty .pmp-scheme-hint {
+  display: none;
 }
 
 .pmp-layout {
@@ -2636,6 +2655,11 @@ body.stage-overlay-open {
   margin: 0 0 0.75rem;
 }
 
+/* Модалки точек схемы ПМП: воздух между сеткой фактов и блоком ниже (текст или modal-viz) */
+#modalBody.modal-body--pmp .viz-stat-grid {
+  margin-bottom: 1.35rem;
+}
+
 .modal-quote {
   margin: 1rem 0 0;
   padding: 0.85rem 1rem;
@@ -2744,11 +2768,26 @@ body.stage-overlay-open {
   gap: 0.65rem;
 }
 
+/* Три карточки на всю ширину модалки (равные колонки) */
+.viz-stat-grid--cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: 100%;
+}
+
+@media (max-width: 520px) {
+  .viz-stat-grid--cols-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
 .viz-stat-cell {
   background: #141414;
   border: 1px solid #333;
-  padding: 0.75rem;
+  padding: 0.75rem 0.65rem;
   text-align: center;
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .viz-stat-cell__v {
@@ -2756,13 +2795,16 @@ body.stage-overlay-open {
   font-family: var(--font-mono);
   font-size: 1.05rem;
   color: var(--red);
+  line-height: 1.25;
+  overflow-wrap: break-word;
 }
 
 .viz-stat-cell__l {
   font-size: 0.68rem;
   color: var(--text-dim);
-  line-height: 1.3;
+  line-height: 1.35;
   margin-top: 0.35rem;
+  overflow-wrap: break-word;
 }
 
 .viz-flow__step {
@@ -2782,16 +2824,22 @@ body.stage-overlay-open {
 
 .viz-flow__n {
   flex-shrink: 0;
-  width: 2rem;
-  height: 2rem;
+  box-sizing: border-box;
+  width: 3.85rem;
+  height: 3.85rem;
   border-radius: 50%;
   border: 1px solid var(--red);
   color: var(--red);
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.58rem;
+  line-height: 1.12;
+  padding: 0.2rem 0.35rem;
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .viz-sub {

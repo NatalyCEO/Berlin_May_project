@@ -68,9 +68,10 @@
     return html;
   }
 
-  function statGrid(cells) {
+  function statGrid(cells, extraClass) {
+    const cls = "viz-stat-grid" + (extraClass ? " " + extraClass : "");
     return (
-      '<div class="viz-stat-grid">' +
+      '<div class="' + cls + '">' +
       cells
         .map(
           (c) =>
