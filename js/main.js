@@ -1005,6 +1005,7 @@
       }
 
       if (video && stageVideo) {
+        video.preload = "auto";
         video.src = stageVideo;
         video.load();
       }
