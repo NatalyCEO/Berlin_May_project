@@ -37,9 +37,9 @@
       </div>
       <div class="chapter-panel">
         <p class="section__label">Берлин. Май</p>
-        <h1 class="section__title">Берлин 1945: масштаб боя и логика спасения</h1>
+        <h1 class="section__title section__title--hero">Берлин 1945: масштаб боя и организация оказания медицинской помощи</h1>
         <p class="section__lead">
-          Стремительное наступление и уличные бои создали новую плотность раненых. Медицинская служба отвечала не отдельными действиями,
+          Стремительное наступление и уличные бои определяли особенности оказания медицинской помощи раненым. Медицинская служба отвечала не хаотично, 
           а цельной системой этапного лечения с эвакуацией по назначению.
         </p>
         <div class="hero-panorama hero-panorama--fallback" role="img" aria-label="Панорама дислокации медсанбата">
@@ -47,8 +47,8 @@
             <article class="stat-card">
               <div class="stat-card__k">За сутки</div>
               <div class="stat-card__value">0,31–0,69%</div>
-              <div class="stat-card__label">Санитарные потери в сутки</div>
-              <div class="stat-card__meta"><span class="stat-card__icon">◉</span>в пике боёв</div>
+              <div class="stat-card__label">Среднесуточно, 16.04–08.05.1945</div>
+              <div class="stat-card__meta"><span class="stat-card__icon">◉</span>от численности личного состава войск, участвоваших в Берлинской операции</div>
             </article>
             <article class="stat-card">
               <div class="stat-card__k">Масштаб</div>
@@ -59,13 +59,13 @@
             <article class="stat-card">
               <div class="stat-card__k">Цена спасения</div>
               <div class="stat-card__value">5,4–7,5%</div>
-              <div class="stat-card__label">Потери медслужбы</div>
-              <div class="stat-card__meta"><span class="stat-card__icon">✚</span>медики под огнём</div>
+              <div class="stat-card__label">Потери медслужбы, апрель-май 1945</div>
+              <div class="stat-card__meta"><span class="stat-card__icon">✚</span>от численности личного состава медицинской службы фронтов</div>
             </article>
             <article class="stat-card">
               <div class="stat-card__k">Фиксация истории</div>
               <div class="stat-card__value">1945</div>
-              <div class="stat-card__label">Бригады музея</div>
+              <div class="stat-card__label">Бригады Военно-медицинского музея</div>
               <div class="stat-card__meta"><span class="stat-card__icon">▣</span>фотографы и художники на фронте</div>
             </article>
           </div>
@@ -87,15 +87,11 @@
             <div class="intro-overview-card__k">Главный принцип</div>
             <h3>Принцип, который держал систему</h3>
             <div class="intro-flow">
-              <span><b>1</b> Розыск</span><span>→</span><span><b>2</b> Стабилизация</span><span>→</span><span><b>3</b> Хирургия</span><span>→</span><span><b>4</b> Госпиталь</span>
+              <span><b>1</b> Розыск</span><span>→</span><span><b>2</b> Оказание первой помощи</span><span>→</span><span><b>3</b> Хирургия</span><span>→</span><span><b>4</b> Госпиталь</span>
             </div>
-            <p>Этапное лечение с эвакуацией по назначению: раненого везли не “дальше”, а туда, где помощь была наиболее своевременной и результативной.</p>
+            <p>Этапное лечение с эвакуацией по назначению: раненого везли туда, где помощь была наиболее своевременной и результативной.</p>
           </article>
         </div>
-
-        <blockquote class="quote-block">
-          Генерал Вейдлинг: «Исключительно маневренное руководство войсками; ясность замыслов, целеустремлённость и настойчивость».
-        </blockquote>
       </div>
     </section>
     <!-- 2 -->
@@ -104,7 +100,7 @@
         <p class="section__label">Цепочка Пирогова</p>
         <h2 class="section__title">Путь раненого</h2>
         <p class="section__lead">
-          Путь раненого года был не хаотичным, а строго выстроенным: от поля боя к этапам помощи, где каждая минута меняла исход.
+          Путь раненого был не хаотичным, а строго выстроенным: от поля боя к этапам помощи, где каждая минута меняла исход.
           Ключевым узлом оставалась <strong>медицинская сортировка</strong> — именно она определяла приоритет, объём помощи и дальнейший маршрут эвакуации.
         </p>
         <p class="evac-chain-hint" id="evacChainHint" role="note">
@@ -118,68 +114,18 @@
           <button type="button" class="evac-step" data-modal="evac-3"><div class="evac-step__icon">▢</div><div class="evac-step__name">Госпиталь</div></button>
           <button type="button" class="evac-step" data-modal="evac-4"><div class="evac-step__icon">➜</div><div class="evac-step__name">Тыл</div></button>
         </div>
-        <div class="evac-scheme evac-scheme--empty" id="pmpDiagram" role="group" aria-label="Интерактивная схема развертывания ПМП">
-          <p class="pmp-scheme-hint" role="note">
-            Схема интерактивная: нажмите на пункт схемы, чтобы узнать подробнее.
-          </p>
-          <div class="pmp-layout">
-            <div class="pmp-imgwrap" id="pmpImgWrap" aria-label="Схема ПМП с горячими точками">
-              <img
-                id="pmpDiagramImg"
-                src="assets/scheme-pmp.jpg"
-                alt="Схема развертывания ПМП"
-                loading="lazy"
-                onerror="this.parentElement.closest('.evac-scheme')?.classList.add('evac-scheme--empty');"
-              />
-              <div class="pmp-empty" id="pmpEmpty">
-                Добавьте файл схемы в `assets/scheme-pmp.jpg` (ваш: «Схема развертывания ПМП.jpg»). После этого появятся подсказки по пунктам.
-              </div>
-
-              <!-- Хотспоты (подсказки по наведению; модалки по клику) -->
-              <button type="button" class="pmp-hotspot" data-hotspot="pmp-transport" data-modal="pmp-transport"
-                aria-label="Площадка транспорта" style="left:37%; top:26%; width:20%; height:11%;"></button>
-              <button type="button" class="pmp-hotspot" data-hotspot="pmp-receive" data-modal="pmp-receive"
-                aria-label="Приемно-сортировочная" style="left:34%; top:48%; width:24%; height:11%;"></button>
-              <button type="button" class="pmp-hotspot" data-hotspot="pmp-dressing" data-modal="pmp-dressing"
-                aria-label="Перевязочная" style="left:49%; top:42%; width:18%; height:11%;"></button>
-              <button type="button" class="pmp-hotspot" data-hotspot="pmp-evac" data-modal="pmp-evac"
-                aria-label="Эвакуационная" style="left:66%; top:40%; width:20%; height:11%;"></button>
-              <button type="button" class="pmp-hotspot" data-hotspot="pmp-isolator" data-modal="pmp-isolator"
-                aria-label="Изолятор" style="left:40%; top:60%; width:15%; height:11%;"></button>
-              <button type="button" class="pmp-hotspot" data-hotspot="pmp-kitchen" data-modal="pmp-kitchen"
-                aria-label="Кухня" style="left:62%; top:30%; width:15%; height:10%;"></button>
-              <button type="button" class="pmp-hotspot" data-hotspot="pmp-osadok" data-modal="pmp-osadok"
-                aria-label="Осадочник" style="left:63%; top:53%; width:19%; height:11%;"></button>
-              <button type="button" class="pmp-hotspot" data-hotspot="pmp-bunkers" data-modal="pmp-bunkers"
-                aria-label="Блиндажи личного состава" style="left:58%; top:21%; width:24%; height:11%;"></button>
-
-              <div class="pmp-tooltip" id="pmpTooltip" role="status" aria-live="polite"></div>
-            </div>
-
-          </div>
-        </div>
         <figure class="evac-photo-full">
           <img src="assets/медсанбат_599.png" alt="Медсанбат № 599" loading="lazy" />
           <figcaption>Медсанбат № 599.</figcaption>
         </figure>
         <div class="stage-next">
-          <button type="button" class="btn-red stage-next__btn" data-next-stage="#instrumenty">Как оперировали в штурме Берлина</button>
+          <button type="button" class="btn-red stage-next__btn" data-next-stage="#instrumenty">Как оказывали помощь в период боев за Берлин</button>
         </div>
       </div>
     </section>
 
     <!-- 4 -->
-    <section class="section chapter" id="instrumenty" data-stage-entry="true" data-stage-video="assets/stages/instrumenty.mp4">
-      <div class="chapter-overlay" aria-hidden="false">
-        <video class="chapter-video" playsinline preload="auto"></video>
-        <div class="chapter-overlay__cinema-bars" aria-hidden="true"></div>
-        <div class="chapter-overlay__box">
-          <p class="chapter-overlay__hint">
-            В подвалах, палатках и полуразрушенных зданиях решается главное: успеть оперировать, чтобы человек вернулся к жизни и надежде.
-          </p>
-          <button type="button" class="btn-red chapter-skip" aria-label="Перейти к материалу этапа"></button>
-        </div>
-      </div>
+    <section class="section chapter" id="instrumenty">
       <div class="chapter-panel">
         <p class="section__label">Музейная витрина</p>
         <h2 class="section__title">Хирургическая помощь</h2>
@@ -293,19 +239,19 @@
         </div>
 
         <div class="chart-wrap surgical-heroes-wrap">
-          <h3>Герои хирургической помощи</h3>
+          <h3>Главные хирурги</h3>
           <div class="surgical-heroes-grid">
             <article class="surgical-hero-card">
               <h4>М. Н. Ахутин</h4>
-              <p>Главный хирург фронта. Лично участвовал в организации и оказании хирургической помощи в Берлинской операции.</p>
+              <p>Главный хирург фронтов (сначала Брянского, затем 2-го Прибалтийского, затем 1-го Украинского). Лично участвовал в организации и оказании хирургической помощи в Берлинской операции.</p>
             </article>
             <article class="surgical-hero-card">
               <h4>П. Н. Напалков</h4>
-              <p>Главный хирург фронта. Руководил работой по тяжелым поражениям и срочным хирургическим вмешательствам.</p>
+              <p>Главный хирург 1-го Украинского фронта. Руководил работой по тяжелым поражениям и срочным хирургическим вмешательствам.</p>
             </article>
             <article class="surgical-hero-card">
               <h4>В. И. Попов</h4>
-              <p>Главный хирург фронта. Поддерживал непрерывность этапного лечения и эвакуации по назначению.</p>
+              <p>Главный хирург 1-го Белорусского фронта. Поддерживал непрерывность этапного лечения и эвакуации по назначению.</p>
             </article>
             <article class="surgical-hero-card">
               <h4>Б. А. Никитин и Н. П. Никольский</h4>
@@ -314,11 +260,10 @@
           </div>
 
           <div class="surgical-awards">
-            <div class="surgical-awards__num">17 + 26</div>
-            <div class="surgical-awards__text">
-              <strong>17</strong> Героев Советского Союза среди санинструкторов и медицинских сестер,
-              <strong>26</strong> медицинских работников, удостоенных медали Флоренс Найтингейл.
-            </div>
+            <div class="surgical-awards__k">Сила подвига</div>
+            <p class="surgical-awards__quote">
+              Преданному уходу медицинских сестер тысячи наших воинов обязаны своей жизнью — об этом говорят десятки писем фронтовиков, вернувшихся в строй.
+            </p>
           </div>
         </div>
 
@@ -398,135 +343,27 @@
             <button type="button" class="btn-ghost inst-strip__btn" data-inst-next aria-label="Следующие инструменты">›</button>
           </div>
         </div>
+        <div class="stage-next">
+          <button type="button" class="btn-red stage-next__btn" data-next-stage="#gumanizm">Когда «враг» лежит на носилках — что делает медик?</button>
+        </div>
       </div>
     </section>
 
     <!-- 5 -->
-    <section class="section chapter" id="aseptika">
-      <div class="chapter-panel">
-        <p class="section__label">Безопасность раны</p>
-        <h2 class="section__title">Антисептика и асептика</h2>
-        <div class="asepsis-grid">
-          <div class="asepsis-col">
-            <h3>Антисептика в ране</h3>
-            <p class="modal-text" style="margin:0">
-              Средство применяли <strong>либо прямо в рану</strong>, либо <strong>пропитывали им тампоны/салфетки</strong> и накладывали на перевязку.
-              Иногда обрабатывали <strong>окружность раны</strong>.
-            </p>
-            <div class="asepsis-flow" aria-hidden="true">
-              <span>раствор</span><span>→</span><span>тампон/салфетка</span><span>→</span><span>перевязка</span>
-            </div>
-            <div class="asepsis-pill-row" aria-label="Примеры антисептиков">
-              <span class="asepsis-pill">карболовая к-та</span>
-              <span class="asepsis-pill">лизол</span>
-              <span class="asepsis-pill">сулема</span>
-              <span class="asepsis-pill">перекись</span>
-              <span class="asepsis-pill">борная к-та</span>
-              <span class="asepsis-pill">хлорамин</span>
-            </div>
-          </div>
-          <div class="asepsis-col">
-            <h3>Асептика в операционной</h3>
-            <p class="modal-text" style="margin:0">
-              Цель — <strong>не допустить инфицирования</strong>. Главный инструмент асептики — <strong>стерилизация высокой температурой</strong>:
-              <strong>кипячение</strong>, <strong>прокаливание сухим жаром</strong>, <strong>текучий пар</strong> или <strong>пар под давлением</strong>.
-            </p>
-            <div class="asepsis-flow" aria-hidden="true">
-              <span>температура</span><span>→</span><span>стерильность</span><span>→</span><span>операция</span><span>→</span><span>асептическая повязка</span>
-            </div>
-            <div class="asepsis-note">
-              Во время операции участники работали преимущественно <strong>инструментами</strong>, избегали касания перевязочного материала руками и использовали <strong>маски</strong>.
-            </div>
-          </div>
-        </div>
-
-        <div class="asepsis-grid asepsis-bottom">
-          <div class="asepsis-col">
-            <h3>Руки хирурга</h3>
-            <p class="modal-text" style="margin:0">
-              Непременное условие вмешательств: тщательное <strong>мытьё</strong> и обработка рук <strong>спиртом</strong> или
-              <strong>спирт-таннином</strong>.
-            </p>
-            <p class="asepsis-note">Именно с рук хирурга начиналась граница между риском инфекции и шансом на выздоровление.</p>
-          </div>
-          <div class="asepsis-col">
-            <h3>Что обеспечивало асептику</h3>
-            <p class="modal-text" style="margin:0">
-              В Великую Отечественную войну при перевязках и операциях применяли 4 группы предметов/материалов, обеспечивающих асептику:
-              <strong>бельё</strong>, <strong>перевязочные материалы</strong>, <strong>лигатуры</strong>, <strong>растворы</strong>,
-              а также <strong>инструменты</strong> и <strong>хозяйственные предметы</strong>.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 6 -->
-    <section class="section chapter" id="kontuziya">
-      <div class="chapter-panel">
-        <p class="section__label">Ударная волна</p>
-        <h2 class="section__title">Контузия</h2>
-        <p class="section__lead">
-          Контузия — закрытая травма мозга от <strong>ударной волны</strong>: нарушаются органы чувств, <strong>речь</strong>, <strong>двигательный аппарат</strong> и <strong>психика</strong>.
-          Для контуженых создавались специализированные госпитали и отделения: после сортировки раненых распределяли по характеру синдромов и оказывали помощь по назначению.
-        </p>
-
-        <div class="contusion-stats">
-          <div class="contusion-stat">
-            <div class="contusion-stat__v">2,5–3,5%</div>
-            <div class="contusion-stat__l">доля контуженых в боевых потерях</div>
-          </div>
-          <div class="contusion-stat">
-            <div class="contusion-stat__v">Сентябрь 1941</div>
-            <div class="contusion-stat__l">развертывание первых спецотделений и госпиталей</div>
-          </div>
-          <div class="contusion-stat">
-            <div class="contusion-stat__v">до 62%</div>
-            <div class="contusion-stat__l">выписка контуженых после лечения</div>
-          </div>
-        </div>
-
-        <div class="contusion-symptoms">
-          <div class="contusion-symptoms__title">Что менялось у контуженого</div>
-          <div class="contusion-pills" aria-label="Симптомы">
-            <span class="contusion-pill">органы чувств</span>
-            <span class="contusion-pill">речь</span>
-            <span class="contusion-pill">двигательный аппарат</span>
-            <span class="contusion-pill">психические расстройства</span>
-          </div>
-        </div>
-        <div class="stage-next">
-          <button type="button" class="btn-red stage-next__btn" data-next-stage="#gumanizm">Когда «враг» лежит на носилках — что делает медик?</button>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- 7 -->
-    <section class="section chapter" id="gumanizm" data-stage-entry="true" data-stage-video="assets/stages/gumanizm.mp4">
-      <div class="chapter-overlay" aria-hidden="false">
-        <video class="chapter-video" playsinline preload="auto"></video>
-        <div class="chapter-overlay__cinema-bars" aria-hidden="true"></div>
-        <div class="chapter-overlay__box">
-          <p class="chapter-overlay__hint">
-            После штурма война не исчезает сразу. В палатах и лазаретах начинает действовать другой закон — лечить, несмотря на вчерашнюю вражду.
-          </p>
-          <button type="button" class="btn-red chapter-skip" aria-label="Перейти к материалу этапа"></button>
-        </div>
-      </div>
+    <section class="section chapter" id="gumanizm">
       <div class="chapter-panel">
         <p class="section__label">Международное гуманитарное право</p>
         <h2 class="section__title">Пленные и лазареты</h2>
         <p class="section__lead">
-          Лечение раненых и больных военнопленных организовывалось под медицинским контролем: часть проходила лечение
-          в сохранённых немецких учреждениях, часть — в армейских госпиталях Красной Армии.
-          Задача системы — лечить на месте до полного исхода и по возможности сокращать эвакуацию за пределы фронта.
+          Оказание медицинской помощи военнопленным в Красной армии строилась на следующих принципах: 
+          часть проходила лечение в сохранённых немецких учреждениях, часть — в армейских госпиталях Красной армии. 
+          Основная задача — лечить на месте до полного исхода и по возможности сокращать эвакуацию за пределы фронта.
         </p>
 
         <div class="prisoners-dashboard">
           <div class="prisoners-total">
             <div class="prisoners-total__v">33 720</div>
-            <div class="prisoners-total__l">Раненых и больных военнопленных на учёте медслужбы армий в боях за Берлин</div>
+            <div class="prisoners-total__l">Раненых и больных военнопленных, прошедших лечение в медицинских учреждениях Красной армии в боях за Берлин.</div>
           </div>
 
           <div class="prisoners-split-viz" aria-label="Распределение по месту лечения">
@@ -534,9 +371,9 @@
               <span class="prisoners-split-viz__seg prisoners-split-viz__seg--de" style="--w:78.7%"></span>
               <span class="prisoners-split-viz__seg prisoners-split-viz__seg--ra" style="--w:21.3%"></span>
             </div>
-            <div class="prisoners-split-viz__legend">
-              <div><strong>78,7%</strong><span>Немецкие больницы и лазареты (под контролем)</span></div>
-              <div><strong>21,3%</strong><span>Армейские госпитали Красной Армии (7 175 чел.)</span></div>
+            <div class="prisoners-split-Лечение раviz__legend">
+              <div><strong>78,7%</strong><span> военнопленных проходили лечение в бывших немецких больницах и лазаретах.</span></div>
+              <div><strong>21,3%</strong><span> военнопленных проходили лечение в армейских госпиталях Красной армии.</span></div>
             </div>
           </div>
         </div>
@@ -552,22 +389,22 @@
             <div class="prisoners-scheme__line" aria-hidden="true"></div>
 
             <article class="prisoners-scheme__node">
-              <div class="prisoners-scheme__head"><span>01</span><h4>Учёт</h4></div>
+              <div class="prisoners-scheme__head"><span>01</span><h4>Сортировка</h4></div>
               <p>Распределение по профилю поражения и состоянию.</p>
             </article>
 
             <article class="prisoners-scheme__node">
-              <div class="prisoners-scheme__head"><span>02</span><h4>Назначение учреждения</h4></div>
+              <div class="prisoners-scheme__head"><span>02</span><h4>Распределение</h4></div>
               <p>Маршрутизация в подходящий лазарет или госпиталь.</p>
             </article>
 
             <article class="prisoners-scheme__node">
-              <div class="prisoners-scheme__head"><span>03</span><h4>Обеспечение лечения</h4></div>
-              <p>Выдача медикаментов и перевязочных средств.</p>
+              <div class="prisoners-scheme__head"><span>03</span><h4>Оказание медицинской помощи</h4></div>
+              <p>Лечение и последующая эвакуация</p>
             </article>
 
             <article class="prisoners-scheme__node">
-              <div class="prisoners-scheme__head"><span>04</span><h4>Контроль исходов</h4></div>
+              <div class="prisoners-scheme__head"><span>04</span><h4>Итоги лечения</h4></div>
               <p>Лечение до выздоровления в пределах армейских и фронтовых баз.</p>
             </article>
           </div>
@@ -601,7 +438,7 @@
         </section>
 
         <div class="stage-next">
-          <button type="button" class="btn-red stage-next__btn" data-next-stage="#transport">Собаки, гуж, машины — как раненого везли дальше</button>
+          <button type="button" class="btn-red stage-next__btn" data-next-stage="#transport">Эвакуация</button>
         </div>
       </div>
     </section>
@@ -620,13 +457,14 @@
       </div>
       <div class="chapter-panel">
         <p class="section__label">Эвакуация</p>
-        <h2 class="section__title">Собаки и санитарный транспорт</h2>
+        <h2 class="section__title">Санитарный транспорт</h2>
 
         <div class="evac-modes" aria-label="Виды медицинской эвакуации">
-          <div class="evac-mode"><strong>Ж/д</strong><span>военно-санитарные поезда, санитарные летучки</span></div>
-          <div class="evac-mode"><strong>Вода</strong><span>лодки, баржи, пароходы</span></div>
-          <div class="evac-mode"><strong>Воздух</strong><span>переброска самолётами</span></div>
-          <div class="evac-mode"><strong>Шоссе/гуж</strong><span>автомашины, лошади, собаки, олени</span></div>
+          <div class="evac-mode"><strong>Гужевой</strong><span>лошади, олени, собаки, верблюды</span></div>
+          <div class="evac-mode"><strong>Автомобильный</strong><span>легковый и грузовые автомобили</span></div>
+          <div class="evac-mode"><strong>Железнодорожный</strong><span>военно-санитарные поезда и летучки</span></div>
+          <div class="evac-mode"><strong>Водный</strong><span>лодки, баржи, суда (щадящая эвакуация)</span></div>
+          <div class="evac-mode"><strong>Авиационный</strong><span>самолёты разных типов</span></div>
         </div>
 
         <div class="transport-split">
@@ -634,7 +472,7 @@
             <h4>ГАЗ-51</h4>
             <div class="transport-visual transport-visual--fit" style="background-image: url('assets/газ-51.png')"></div>
             <p>
-              Модель ГАЗ-51. Крытая полуторатонка, в кузове двухъярусные носилки для тяжелораненых.
+              Модель ГАЗ-51. Крытый санитарный автомобиль, в кузове двухъярусные носилки для тяжелораненых.
             </p>
           </div>
           <div class="transport-card">
@@ -644,7 +482,7 @@
                 <img src="assets/эвакуация.jpg" alt="Медики укладывают раненого на санитарную конную повозку с обозначением Красного Креста" loading="lazy" decoding="async" />
               </div>
               <figcaption class="transport-card__figcaption">
-                На суше широко использовались для эвакуации раненых и больных <strong>упряжные животные</strong>. Погрузка раненых под огнём осуществлялась более простым и безопасным методом (плащ-палатка, лодочка-волокуша, носилочная лямка).
+                Широко использовались для эвакуации раненых и больных <strong>упряжные животные</strong>. Погрузка раненых под огнём осуществлялась более простым и безопасным методом (плащ-палатка, лодочка-волокуша, носилочная лямка).
               </figcaption>
             </figure>
           </div>
@@ -652,7 +490,7 @@
         <p class="section__lead">
           В годы Великой Отечественной войны санитарные собаки использовались как <strong>ездовые</strong> и <strong>розыскные</strong>:
           предпочтение отдавали лайкам и овчаркам, для упряжек отбирали и крепких беспородных собак.
-          Упряжки работали круглый год — доставляли раненых и медикаменты на передовых участках эвакуации; встречалось и буксирование лодок с ранеными.
+          Упряжки доставляли медикаменты на передовую, а обратно шла эвакуация раненых. При необходимости использовали лодочки-волокуши.
         </p>
 
         <div class="dogs-roles">
@@ -687,7 +525,7 @@
         <blockquote class="quote-block">«Победа над временем и пространством… — вот значение транспорта» — Н. Н. Бурденко.</blockquote>
 
         <div class="stage-next">
-          <button type="button" class="btn-red stage-next__btn" data-next-stage="#geroi">Когда глохнут выстрелы — про тех, кто остался с красным крестом</button>
+          <button type="button" class="btn-red stage-next__btn" data-next-stage="#geroi">Когда смолкли выстрелы</button>
         </div>
       </div>
     </section>
@@ -710,10 +548,9 @@
         <div class="chronicle-in-final" id="hronika">
           <h2 class="section__title">Берлин: 16 апреля — 8 мая</h2>
           <p class="section__lead">
-            Берлинская операция завершила войну на советско-германском фронте: в наступлении участвовали силы трёх фронтов,
-            боевые действия тянулись <strong>23 дня</strong>, штурм столицы шёл улица за улицей, дом за домом.
-            Медицинская служба не отставала от войск — полевые узлы и госпитали разворачивались в городе, раненых доставали
-            из подвалов и завалов.
+            Берлинская наступательная операция завершила войну на советско-германском фронте: в наступлении участвовали силы трёх фронтов,
+            боевые действия тянулись <strong>23 дня</strong>.
+            Медицинская служба не отставала от наступленя.
           </p>
           <div class="chronicle-layout">
             <figure class="chronicle-photo">
@@ -734,7 +571,7 @@
               <article class="chronicle-card" role="listitem">
                 <time>30 апр</time>
                 <h3>Знамя над Рейхстагом</h3>
-                <p>На фоне ожесточенных боёв медслужба продолжала эвакуацию и хирургическую помощь без пауз.</p>
+                <p>На фоне ожесточенных боёв медицинская служба продолжала свою работу без перерыва.</p>
               </article>
               <article class="chronicle-card" role="listitem">
                 <time>2 мая</time>
@@ -760,15 +597,14 @@
 
           <div class="medics-prose">
             <p class="medics-prose__lead">
-              Весной 1945-го в руинах Берлина военные медики делали невозможное: находили, оперировали, спасали. Тишина после штурма стала и их Победой.
+              Весной 1945-го на руинах Берлина военные медики делали все возможное и даже больше: ценой невероятных усилий и в условиях ежеминутной опасности, они находили раненых, оперировали, спасали. Тишина и жизнь раненых после штурма стала и их Победой.
             </p>
           </div>
 
           <div class="medics-thanks" role="group" aria-label="Благодарность медикам">
             <p class="medics-thanks__word">Спасибо</p>
             <p class="medics-thanks__lines">
-              врачам, фельдшерам, медицинским сёстрам и санитарам — за мужество, точность и милосердие под огнём.
-            </p>
+              всем медицинским работникам — за мужество, профессионализм и милосердие.
           </div>
 
           <p class="medics-prose__outro">
@@ -777,7 +613,7 @@
 
           <section class="medics-notes" aria-labelledby="medics-notes-h">
             <h3 id="medics-notes-h" class="medics-notes__h">Что важно запомнить</h3>
-            <p class="medics-notes__intro">Подвиг медиков — в отваге нести помощь сквозь огонь.</p>
+            <p class="medics-notes__intro">Подвиг медиков — самоотверженный труд для спасения раненых.</p>
             <div class="medics-notes__grid">
               <article class="medics-note medics-note--viz">
                 <div class="medics-note__icon" aria-hidden="true">✚</div>
@@ -787,7 +623,7 @@
               <article class="medics-note medics-note--viz">
                 <div class="medics-note__icon" aria-hidden="true">◈</div>
                 <h4 class="medics-note__title">Работа в руинах</h4>
-                <p>Санитары и сёстры выносили раненых из подвалов и завалов под огнём.</p>
+                <p>Военные медики выносили раненых из подвалов и завалов под огнём.</p>
               </article>
               <article class="medics-note medics-note--viz">
                 <div class="medics-note__icon" aria-hidden="true">🕊</div>
@@ -797,7 +633,7 @@
             </div>
           </section>
           <blockquote class="quote-block">
-            Память о Берлине 1945 года — это не только память о штурме. Это память о милосердии, которое не отступило даже там, где шла ожесточённая война.
+            Память о Берлине 1945 года — это не только память о боях. Это память о милосердии, которое не отступило даже там, где шла ожесточённая война.
           </blockquote>
         </div>
       </div>

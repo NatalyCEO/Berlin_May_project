@@ -174,6 +174,10 @@ main {
   max-width: 18ch;
 }
 
+.section__title--hero {
+  max-width: 30ch;
+}
+
 .section__lead {
   max-width: 42rem;
   color: var(--text);
@@ -1357,24 +1361,25 @@ main {
   border: 1px solid rgba(227, 43, 43, 0.45);
   background: linear-gradient(145deg, rgba(227, 43, 43, 0.32), rgba(20, 20, 20, 0.85));
   padding: 1rem 1.1rem;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 1rem;
-  align-items: center;
+  display: block;
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.3);
 }
 
-.surgical-awards__num {
-  font-size: clamp(1.4rem, 4vw, 2.25rem);
-  color: var(--white);
+.surgical-awards__k {
+  margin: 0 0 0.5rem;
+  color: #ffd6d6;
   font-family: var(--font-mono);
-  text-shadow: 0 0 22px rgba(227, 43, 43, 0.35);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
-.surgical-awards__text {
-  color: var(--text);
-  line-height: 1.55;
+.surgical-awards__quote {
+  margin: 0;
+  color: var(--white);
+  line-height: 1.6;
   font-size: 0.92rem;
+  font-style: italic;
 }
 
 /* Instrument strip: 5 visible cards + arrows */
@@ -2783,9 +2788,31 @@ body.stage-overlay-open {
   width: 100%;
 }
 
+/* 5 карточек транспорта: 3 сверху + 2 снизу на всю ширину */
+.viz-stat-grid--transport {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  width: 100%;
+}
+
+.viz-stat-grid--transport .viz-stat-cell:nth-child(-n + 3) {
+  grid-column: span 2;
+}
+
+.viz-stat-grid--transport .viz-stat-cell:nth-child(n + 4) {
+  grid-column: span 3;
+}
+
 @media (max-width: 520px) {
   .viz-stat-grid--cols-3 {
     grid-template-columns: 1fr;
+  }
+
+  .viz-stat-grid--transport {
+    grid-template-columns: 1fr;
+  }
+
+  .viz-stat-grid--transport .viz-stat-cell {
+    grid-column: span 1;
   }
 }
 
@@ -3504,14 +3531,26 @@ body.contusion-body {
 /* ——— Виды эвакуации ——— */
 .evac-modes {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 0.75rem;
   margin: 1.25rem 0 0.25rem;
+}
+
+.evac-modes .evac-mode:nth-child(-n + 3) {
+  grid-column: span 2;
+}
+
+.evac-modes .evac-mode:nth-child(n + 4) {
+  grid-column: span 3;
 }
 
 @media (max-width: 900px) {
   .evac-modes {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .evac-modes .evac-mode {
+    grid-column: span 1;
   }
 }
 
