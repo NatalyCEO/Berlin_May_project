@@ -2414,6 +2414,20 @@ body.stage-overlay-open {
   pointer-events: none;
 }
 
+/* Портрет и узкие окна: cover сильно срезает бока (кадр «ближе»). Показываем весь кадр по ширине. */
+@media (max-aspect-ratio: 1/1) {
+  .chapter-video {
+    object-fit: contain;
+  }
+}
+
+/* Альбом на телефоне: при очень низкой высоте тоже лучше не кропать чрезмерно */
+@media (orientation: landscape) and (max-height: 500px) {
+  .chapter-video {
+    object-fit: contain;
+  }
+}
+
 .chapter-overlay::after {
   content: "";
   position: absolute;
