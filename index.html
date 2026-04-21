@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Берлин. Май</title>
   <meta name="description" content="Пошаговое погружение: военная медицина, Берлинская операция, апрель–май 1945." />
-  <link rel="preload" href="assets/stages/masshtab.mp4" as="video" type="video/mp4" />
+  <link rel="preload" href="assets/stages/начало.mp4" as="video" type="video/mp4" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
@@ -24,7 +24,7 @@
 
   <main>
     <!-- 1 -->
-    <section class="section chapter" id="masshtab" data-stage-entry="true" data-stage-video="assets/stages/masshtab.mp4">
+    <section class="section chapter" id="masshtab" data-stage-entry="true" data-stage-video="assets/stages/начало.mp4">
       <div class="chapter-overlay" aria-hidden="false">
         <video class="chapter-video" playsinline preload="auto"></video>
         <div class="chapter-overlay__cinema-bars" aria-hidden="true"></div>
@@ -125,7 +125,17 @@
     </section>
 
     <!-- 4 -->
-    <section class="section chapter" id="instrumenty">
+    <section class="section chapter" id="instrumenty" data-stage-entry="true" data-stage-video="assets/stages/хирургия.mp4">
+      <div class="chapter-overlay" aria-hidden="false">
+        <video class="chapter-video" playsinline preload="auto"></video>
+        <div class="chapter-overlay__cinema-bars" aria-hidden="true"></div>
+        <div class="chapter-overlay__box">
+          <p class="chapter-overlay__hint">
+            В подвалах, палатках и полуразрушенных зданиях решается главное: успеть оперировать, чтобы человек вернулся к жизни и надежде.
+          </p>
+          <button type="button" class="btn-red chapter-skip" aria-label="Перейти к материалу этапа"></button>
+        </div>
+      </div>
       <div class="chapter-panel">
         <p class="section__label">Музейная витрина</p>
         <h2 class="section__title">Хирургическая помощь</h2>
@@ -156,12 +166,12 @@
           </div>
           <div class="surgical-story__media">
             <figure class="surgical-photo-card">
-              <img src="assets/хирургическая помощь.jpg" alt="Госпитальный этап: работа медиков" loading="lazy" />
-              <figcaption>Госпитальный этап. Работа медиков.</figcaption>
+              <img src="assets/хирургическая помощь.jpg" alt="Осмотр раненных и оказание им квалифицированной помощи в армейском госпитале" loading="lazy" />
+              <figcaption>Осмотр раненных и оказание им квалифицированной помощи в армейском госпитале.</figcaption>
             </figure>
             <figure class="surgical-photo-card">
-              <img src="assets/хирургическая помощь 2.jpg" alt="Госпитальный этап: проведение операции, 26 апреля 1945 г." loading="lazy" />
-              <figcaption>Проведение операции.</figcaption>
+              <img src="assets/хирургическая помощь 2.jpg" alt="Проведение операции раненному в медико-санитарном батальоне, развернутом в палатке" loading="lazy" />
+              <figcaption>Проведение операции раненному в медико-санитарном батальоне, развернутом в палатке.</figcaption>
             </figure>
           </div>
         </div>
@@ -444,7 +454,7 @@
     </section>
 
     <!-- 8 -->
-    <section class="section chapter" id="transport" data-stage-entry="true" data-stage-video="assets/stages/transport.mp4">
+    <section class="section chapter" id="transport" data-stage-entry="true" data-stage-video="assets/stages/эвакуация.mp4">
       <div class="chapter-overlay" aria-hidden="false">
         <video class="chapter-video" playsinline preload="auto"></video>
         <div class="chapter-overlay__cinema-bars" aria-hidden="true"></div>
@@ -531,7 +541,7 @@
     </section>
 
     <!-- 9 -->
-    <section class="section chapter" id="geroi" data-stage-entry="true" data-stage-video="assets/stages/geroi.mp4">
+    <section class="section chapter" id="geroi" data-stage-entry="true" data-stage-video="assets/stages/конец.mp4">
       <div class="chapter-overlay" aria-hidden="false">
         <video class="chapter-video" playsinline preload="auto"></video>
         <div class="chapter-overlay__cinema-bars" aria-hidden="true"></div>
@@ -554,8 +564,8 @@
           </p>
           <div class="chronicle-layout">
             <figure class="chronicle-photo">
-              <img src="assets/работа медиков в разрушенном городе.jpg" alt="Берлин, апрель 1945: работа медиков в разрушенном городе" loading="lazy" />
-              <figcaption>Берлин, апрель 1945. Медики работают в руинах города.</figcaption>
+              <img src="assets/работа медиков в разрушенном городе.jpg" alt="Берлин, апрель 1945 года. Эвакуация раненных в ближайшее учебное учреждение." loading="lazy" />
+              <figcaption>Берлин, апрель 1945 года. Эвакуация раненных в ближайшее учебное учреждение.</figcaption>
             </figure>
             <div class="chronicle-open" role="list">
               <article class="chronicle-card" role="listitem">

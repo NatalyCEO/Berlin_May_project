@@ -943,9 +943,9 @@
         } else {
           const afterVideoUntilSel = {
             masshtab: "#evakuaciya",
-            instrumenty: "#gumanizm",
+            /* После хирургии — только до конца этого раздела; #gumanizm открывается кнопкой «Далее». */
+            instrumenty: "#instrumenty",
             transport: "#transport",
-            gumanizm: "#gumanizm",
           }[section.id];
           const untilEl = afterVideoUntilSel ? $(afterVideoUntilSel) : null;
           setJourneyScrollBoundary(untilEl || section);

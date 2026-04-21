@@ -2458,7 +2458,7 @@ body.stage-overlay-open {
   position: absolute;
   left: 0;
   right: 0;
-  height: clamp(56px, 12vh, 132px);
+  height: clamp(32px, 6.5vh, 72px);
   background: #000;
 }
 
