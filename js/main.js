@@ -909,11 +909,11 @@
   function initChapters() {
     const entrySections = $$(".chapter[data-stage-entry=\"true\"]");
 
-    const playOverlayVideo = (video) => {
+    const playOverlayVideo = (video, section) => {
       if (!video) return;
       video.controls = false;
       video.muted = true;
-      video.loop = false;
+      video.loop = section && section.id === "masshtab";
       video.autoplay = true;
       video.playsInline = true;
       video.currentTime = 0;
@@ -983,7 +983,7 @@
         hint.dataset.typing = "false";
         hint.textContent = "";
       }
-      playOverlayVideo(video);
+      playOverlayVideo(video, section);
       typeStageHint(hint);
       document.body.classList.add("stage-overlay-open");
 
@@ -1007,6 +1007,7 @@
       if (video && stageVideo) {
         video.preload = "auto";
         video.src = stageVideo;
+        video.loop = section.id === "masshtab";
         video.load();
       }
 
