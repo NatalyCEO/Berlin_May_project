@@ -2472,47 +2472,6 @@ body.stage-overlay-open {
   box-shadow: 0 -20px 48px rgba(0, 0, 0, 0.45);
 }
 
-/* Портрет: без декоративных полос (дубли с cover), мягче затемнение — меньше «пустого» чёрного, текст ближе к центру кадра */
-@media (max-aspect-ratio: 1/1) {
-  .chapter-overlay {
-    padding: clamp(0.5rem, 3vw, 1.25rem);
-  }
-
-  .chapter-overlay__cinema-bars {
-    display: none;
-  }
-
-  .chapter-video {
-    object-fit: cover;
-    object-position: center 42%;
-  }
-
-  .chapter-overlay::before {
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.52) 0%,
-      rgba(0, 0, 0, 0.38) 14%,
-      rgba(0, 0, 0, 0.1) 32%,
-      rgba(0, 0, 0, 0.05) 45%,
-      rgba(0, 0, 0, 0.05) 55%,
-      rgba(0, 0, 0, 0.1) 68%,
-      rgba(0, 0, 0, 0.38) 86%,
-      rgba(0, 0, 0, 0.52) 100%
-    );
-  }
-
-  .chapter-overlay::after {
-    background:
-      radial-gradient(ellipse at center, rgba(0, 0, 0, 0.05) 42%, rgba(0, 0, 0, 0.42) 100%),
-      linear-gradient(180deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.34));
-  }
-
-  .chapter-overlay__hint {
-    margin-top: 0.35rem;
-    margin-bottom: 0.85rem;
-  }
-}
-
 .chapter-overlay__hint {
   font-family: var(--font-sans);
   font-size: clamp(0.94rem, 1.5vw, 1.08rem);
